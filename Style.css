@@ -118,6 +118,8 @@ fieldset legend {
     background-color: var(--background-input);
     margin: .8rem 0 1.6rem 0;
     border-radius: .8rem;
+    padding: 1.0rem;
+    
 }
 
 footer {
