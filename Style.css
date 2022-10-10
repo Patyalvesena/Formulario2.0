@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+:root {
+    font-size: 62.5%;
+    /*verificar se tamanho de fontes não ficarão melhores com clamp*/
+    /*fontes do projeto*/
+    --fontf-others: 'Poppins', sans-serif;
+    --fontf-titles: 'Staatliches', cursive;
+    /*cores do de fontes*/
+    --fcolor-header: #ffffff;
+    --fcolor-legend: #535971;
+    --fcolor-body: #4E4958;
+    --fcolor-span: #C1BCCC;
+    /*cores de background*/
+    --background-body:#e5e5e5;
+    --background-header: #535971;
+    --background-form: #ffffff;
+    --background-input: #fafafc; 
+    --background-button: #FF5374;
+}
+
+body {
+    width: 100%;
+    background-color: var(--background-body);
+}
+
+header {
+    width: 100%;
+    height: 436px;
+    background-color: var(--background-header);
+    color: var(--fcolor-header);
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    width: 75.0rem;
+    height: 124px;
+    margin-top: 14.0rem;
+    margin: auto;
+}
+
+
+form {
+    margin: auto;
+    width: 75.0rem;
+    background-color: var(--background-form);
+    color: var(--fcolor-body);
+    border-radius: 2.0rem 2.0rem 0px 0px;
+    padding: 6.4rem;
+}
+
+fieldset {
+    border: none;
+} 
+
+.column-names {
+    display: flex;
+    width: 100%;
+    gap: 2.2rem;
+
+}
+
+h1, legend, button {
+    font-family: var(--fontf-titles);
+}
+
+p, input, label, span {
+    font-family: var(--fontf-others);
+}
+
+hr {
+    border: .1rem solid #E6E6F0;
+    margin-bottom: 3.2rem;
+}
+
+header h1 {
+    font-size: 4.8rem;
+}
+
+header p {
+    width: 41.7rem;
+    margin-top: 1.8rem;
+    font-size: 2.0rem;
+}
+
+fieldset legend {
+    color: var(--fcolor-legend);
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.input-wrapper {
+    font-size: 1.4rem;
+    width: 100%;  
+}
+
+.input-wrapper span { 
+    margin: .8rem;
+    color: #C1BCCC;
+}
+
+.input-wrapper span:hover { 
+    color: #635f6d;
+}
+
+
+.input-wrapper input {
+    width: 100%;
+    height: 5.6rem;
+    border: .1rem solid #E6E6F0;
+    background-color: var(--background-input);
+    margin: .8rem 0 1.6rem 0;
+    border-radius: .8rem;
+}
+
+footer {
+    background-color: var(--background-header);
+    width: 75.0rem;
+    height: 160px;
+    margin: auto;
+    border-radius: 0px 0px 2.0rem 2.0rem;
+    margin-bottom: 36.6rem;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    font-size: 2.rem;
+    color: var(--background-form);
+    background-color: var(--background-button);
+    border: none;
+    border-radius: 2.0rem;
+    width: 60.8rem;
+    height: 55.65px;
+}
