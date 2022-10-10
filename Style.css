@@ -28,16 +28,20 @@ body {
     background-color: var(--background-body);
 }
 
-header {
+body::before {
+    content: "";
+    position: absolute;
     width: 100%;
     height: 436px;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
     background-color: var(--background-header);
-    color: var(--fcolor-header);
-    display: flex;
-    flex-direction: column;
 }
 
+
 .hero {
+    color: var(--fcolor-header);
     width: 75.0rem;
     height: 124px;
     margin-top: 14.0rem;
@@ -46,11 +50,12 @@ header {
 
 
 form {
-    margin: auto;
+    margin: 5.8rem auto;
     width: 75.0rem;
     background-color: var(--background-form);
     color: var(--fcolor-body);
     border-radius: 2.0rem 2.0rem 0px 0px;
+    margin-bottom: 0;
     padding: 6.4rem;
 }
 
@@ -73,16 +78,17 @@ p, input, label, span {
     font-family: var(--fontf-others);
 }
 
-hr {
+form hr {
     border: .1rem solid #E6E6F0;
     margin-bottom: 3.2rem;
 }
 
-header h1 {
+.hero h1 {
+    margin-top: 14.0rem;
     font-size: 4.8rem;
 }
 
-header p {
+.hero p {
     width: 41.7rem;
     margin-top: 1.8rem;
     font-size: 2.0rem;
