@@ -39,7 +39,6 @@ body::before {
     background-color: var(--background-header);
 }
 
-
 .hero {
     color: var(--fcolor-header);
     width: 75.0rem;
@@ -47,7 +46,6 @@ body::before {
     margin-top: 14.0rem;
     margin: auto;
 }
-
 
 form {
     margin: 5.8rem auto;
@@ -67,7 +65,6 @@ fieldset {
     display: flex;
     width: 100%;
     gap: 2.2rem;
-
 }
 
 h1, legend, button {
@@ -113,7 +110,6 @@ fieldset legend {
 .input-wrapper span:hover { 
     color: #635f6d;
 }
-
 
 .input-wrapper input {
     width: 100%;
