@@ -25,6 +25,7 @@
     <main>
         <div class="form">
             <form action="">
+
                 <fieldset>
                     <legend>Informações pessoais</legend>
                     <hr/>
@@ -47,6 +48,54 @@
                         <label for="password"> Senha <span>(mínimo de 6 caracteres)</span></label>
                         <input type="password" id="password">
                     </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações do mentor</legend>
+                    <hr/>
+                    <div class="input-wrapper">
+                        <label for="name">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+                        <input type="text" id="name">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Seus horários disponíveis</legend>
+                    <hr/>
+                    
+                    <div class="legend">Primeira mentoria</div> 
+                    <div class="schedule-mentory">   
+                        <div class="input-wrapper">
+                            <label for="date">Data <span> (DD/MM/AAAA)</span></label>
+                            <input type="text" id="date" onfocus="(this.type=&quot;date&quot;)" placeholder="" required="">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="time-start">Das</span></label>
+                            <input type="text" id="time-start" onfocus="(this.type=&quot;time&quot;)" placeholder="" required="">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="time-end">Até</span></label>
+                            <input type="text" id="time-end" onfocus="(this.type=&quot;time&quot;)" placeholder="" required="">
+                        </div>
+                    </div>  
+
+                    
+                    <div class="legend">Segunda mentoria</div>    
+                    <div class="schedule-mentory">   
+                        <div class="input-wrapper">
+                            <label for="date">Data <span> (DD/MM/AAAA)</span></label>
+                            <input type="text" id="date" onfocus="(this.type=&quot;date&quot;)" placeholder="" required="">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="time-start">Das</span></label>
+                            <input type="text" id="time-start" onfocus="(this.type=&quot;time&quot;)" placeholder="" required="">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="time-end">Até</span></label>
+                            <input type="text" id="time-end" onfocus="(this.type=&quot;time&quot;)" placeholder="" required="">
+                        </div>
+                    </div>  
+
                 </fieldset>
             </form>
             <footer>
